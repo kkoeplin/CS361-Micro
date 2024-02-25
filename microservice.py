@@ -13,6 +13,7 @@ def get_random_exercise():
     if not body_part:
         return jsonify({"error": "Body part parameter is required."}), 400
     
+    # Gets ten different exercizes based on the body part.
     url = f"https://exercisedb.p.rapidapi.com/exercises/bodyPart/{body_part}?limit=10"
     headers = {
         "X-RapidAPI-Key": RAPIDAPI_KEY,

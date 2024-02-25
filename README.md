@@ -36,17 +36,17 @@ To request data from the microservice, follow these steps:
 6) The client will receive the chosen exercise as the response.
 
 Example:
-import requests
-
-url = 'http://localhost:5013/get_random_exercise'
-
-body_part = 'upper arm'
-
-request_url = f"{url}?bodyPart={body_part}"
-
-response = requests.get(request_url)
-
-print("Exercise:", response.json())
+            import requests
+            
+            url = 'http://localhost:5013/get_random_exercise'
+            
+            body_part = 'upper arm'
+            
+            request_url = f"{url}?bodyPart={body_part}"
+            
+            response = requests.get(request_url)
+            
+            print("Exercise:", response.json())
 
 7) The user will be prompted to input another body part after receiving the response.
    

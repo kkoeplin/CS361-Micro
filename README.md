@@ -80,3 +80,4 @@ waist :
   
 
 ## UML Sequence Diagram
+![image](https://github.com/kkoeplin/CS361-Micro/assets/91230923/a84690db-1e87-4c90-b323-ddd8dc2df17e)

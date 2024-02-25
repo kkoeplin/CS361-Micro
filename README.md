@@ -37,20 +37,10 @@ To request data from the microservice, follow these steps:
 
 Example:
 import requests
-
-# URL of the microservice endpoint
 url = 'http://localhost:5013/get_random_exercise'
-
-# Valid body part input
 body_part = 'upper arm'
-
-# Construct the URL with the desired body part as a query parameter
 request_url = f"{url}?bodyPart={body_part}"
-
-# Send a GET request to the microservice endpoint
 response = requests.get(request_url)
-
-# Print the chosen exercise received 
 print("Exercise:", response.json())
 
 7) The user will be prompted to input another body part after receiving the response.

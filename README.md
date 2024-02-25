@@ -51,8 +51,22 @@ Example:
 7) The user will be prompted to input another body part after receiving the response.
    
 ## Receiving Data:
+1) The microservice will listen for incoming GET requests on the /get_random_exercise endpoint.
+
+2) Once a valid GET request is received, the microservice will fetch data from an external API based on the body part.
+
+3) The microservice will then return a JSON response containing information about a randomly selected exercise for the specified body part.
 
 Example:
+waist : 
+      {'bodyPart': 'waist', 
+      'equipment': 'assisted', 
+      'gifUrl': 'https://v2.exercisedb.io/image/3uoIxwD8xWXJyL', 
+      'id': '0010', 
+      'instructions': ['Hang from a pull-up bar with   your arms fully extended and your palms facing away from you.', 'Engage your core and lift your knees towards your chest, keeping your legs together.', 'Once your knees are at chest level, explosively throw your legs down towards the ground, extending them fully.', 'Allow your legs to swing back up and repeat the movement for the desired number of repetitions.'], 
+      'name': 'assisted hanging knee raise with throw down', 
+      'secondaryMuscles': ['hip flexors', 'lower back'], 
+      'target': 'abs'}
 
   
 
